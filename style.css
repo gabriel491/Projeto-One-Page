@@ -1,0 +1,92 @@
+.container-fluid {
+    padding: 0;
+}
+
+.container-fluid button:hover {
+    background-color: #6b6b6b;
+}
+
+/* ############# jumbotron ############# */
+.jumbotron {
+    background: url(./assets/images/bg-big.jpg) center no-repeat;  
+    background-size: cover;
+
+    height: 70vh;    
+    border-radius: 0;
+}
+
+#jumbotron-conquer{
+    background: url(./assets/images/bg-big-1.jpg) center no-repeat; 
+    height: 50vh;
+    border-radius: 0;
+}
+
+#jumbotron-form {
+    background: url(./assets/images/bg-big.jpg) center no-repeat;  
+    background-size: cover;
+
+    height:80vh;    
+    border-radius: 0;
+}
+
+.jumbotron .container-text {
+    backdrop-filter: blur(2px);
+    backdrop-filter: brightness(50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ############# Cards Stacks ############# */
+
+img {
+    max-height: 35%;
+}
+
+.card {
+    border-style: none;
+}
+
+.card-body {
+    flex: 0;
+}
+
+.inner-card, .card-header {
+    background: rgb(242, 241, 237);
+}
+
+.card-header {
+    border-style: none;
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+/* ############# jumbotron 2 ############# */
+.title-shadow {
+    position: relative;
+}
+/* ############# Texto Invertido ############# */
+.title-shadow:after {
+    content: attr(title);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleY(-1);
+    transform-origin: bottom;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(255, 255, 255, 0.5) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    right: 0;
+}
+
+/* ############# Footer-Jumbotron ############# */
+.text-box {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #fff;
+}
